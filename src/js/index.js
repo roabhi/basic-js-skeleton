@@ -15,12 +15,14 @@ IMPORT STYLES
 import '../scss/styles.scss';
 
 
+const msg = '   Hello world';
+
 const init = e => {
     document.removeEventListener('DOMContentLoaded', init, false);
 
-    document.getElementById('msg').innerHTML = '     Hello World'.trimStart();
+    document.getElementById('msg').innerHTML = msg.trimStart();
 
- 
+    console.info(msg);
 }
 
 
